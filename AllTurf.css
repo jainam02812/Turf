@@ -1,0 +1,71 @@
+.turf-container {
+  padding: 30px;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.turf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.turf-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.turf-card:hover {
+  transform: translateY(-5px);
+}
+
+.turf-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.turf-card h2 {
+  margin: 10px 0 5px;
+  color: #222;
+}
+
+.turf-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0 15px;
+}
+
+.update-btn, .delete-btn {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+.update-btn {
+  background-color: #4caf50;
+}
+
+.delete-btn {
+  background-color: #f44336;
+}
